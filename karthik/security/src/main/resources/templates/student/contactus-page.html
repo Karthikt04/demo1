@@ -1,28 +1,67 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-  <head>
-  <title>MCE Students</title>
-  <link
-  	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-  	rel="stylesheet"
-  	integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-  	crossorigin="anonymous">
-  <link rel="stylesheet" th:href="@{/css/styles.css}">
-  </head>
-  <body>
+
+<head>
+	<title>MCE Students</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+
+<body>
 	<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-	  		<ul class="navbar-nav me-auto">
-	  			<li class="nav-item"><a href="/home" class="nav-link">Home</a></li>
-	  			<li class="nav-item"><a href="/readstudents" class="nav-link">Read Students</a></li>
-	  			<li class="nav-item"><a href="/createstudent" class="nav-link">Create Student</a></li>
-	  		</ul>
-	  		<ul class="navbar-nav ms-auto">
-	  			<li class="nav-item"><a href="/aboutus" class="nav-link">About Us</a></li>
-	  			<li class="nav-item"><a href="/contactus" class="nav-link">Contact Us</a></li>
-	  			<form th:action="@{/logout}" method="post"><button type="submit" class="btn btn-danger">Logout</button></form>
-	  		</ul>
-	  	</nav>
-	  <div class="container">
-			<h1 class="text-center">Contact Us..</h1>
+		<ul class="navbar-nav me-auto">
+			<li class="nav-item"><a href="/home" class="nav-link">Home</a></li>
+			<li class="nav-item"><a href="/readstudents" class="nav-link">Read Students</a></li>
+			<li class="nav-item"><a href="/createstudent" class="nav-link">Create Student</a></li>
+		</ul>
+		<ul class="navbar-nav ms-auto">
+			<li class="nav-item"><a href="/aboutus" class="nav-link">About Us</a></li>
+			<li class="nav-item"><a href="/contactus" class="nav-link">Contact Us</a></li>
+			<form th:action="@{/logout}" method="post"><button type="submit" class="btn btn-danger">Logout</button>
+			</form>
+		</ul>
+	</nav>
+	<div class="container">
+		<h1 class="text-center">Contact Us..</h1>
+	</div>
+	<footer class="contactus-footer">
+		<div class="container">
+			<span>
+				<table style="width: 100%;">
+					<tr>
+						<td>
+							<table class="innertable-reformat" style="padding-left: 30px;">
+								<tr>
+									<td><img src="https://cdn-icons-png.flaticon.com/512/217/217887.png"
+											class="icon-format" alt="call"></td>
+									<td>CALL US ANYTIME:<BR>+918393422928</td>
+								</tr>
+							</table>
+						</td>
+						<td>
+							<table class="innertable-reformat" style="padding-left: 50px;">
+								<tr>
+									<td><img src="https://png.pngtree.com/png-vector/20231127/ourmid/pngtree-email-red-flat-icon-isolated-e-mail-png-image_10722797.png"
+											class="icon-format" alt="mail"></td>
+									<td>EMAIL US<BR>mce@mce.edu.in</td>
+								</tr>
+							</table>
+						</td>
+						<td>
+							<table class="innertable-reformat">
+								<tr>
+									<td><img src="https://cdn-icons-png.freepik.com/512/14034/14034333.png"
+											class="icon-format" alt="location"></td>
+									<td>COLLEGE LOCATION<br>No-12, Vembuliamman Koil Street,
+										West K.K Nagar, Chennai-600078.</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</span>
 		</div>
+	</footer>
 </body>
+
 </html>
