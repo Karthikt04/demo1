@@ -70,3 +70,22 @@
     font-size: x-large;
     padding-bottom: 40%;
 }
+
+.hero-section {
+    position: relative;
+    height: 200px;
+    background-image: url('https://image-static.collegedunia.com/public/college_data/images/campusimage/1418200620aw2.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    padding-bottom: 30px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
